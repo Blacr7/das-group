@@ -113,7 +113,8 @@ header{
     justify-items: end;
     grid-template-columns: minmax(50%, 60%) 1fr;
     
-    height: 80vh;
+    height: max-content;
+    min-height: 80vh;
     font-size: 1rem;
     
     .aboutUsText{
@@ -272,7 +273,7 @@ footer{
 @media only screen and (max-width: 1024px) {
     .pageBanner{
         grid-template-columns: auto 1fr;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/Assets/banner.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../Assets/banner.jpg');
 
         .bannerInformation{
             width: 80%;

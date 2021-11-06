@@ -142,7 +142,10 @@ header img {
   justify-items: end;
   -ms-grid-columns: minmax(50%, 60%) 1fr;
       grid-template-columns: minmax(50%, 60%) 1fr;
-  height: 80vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 80vh;
   font-size: 1rem;
 }
 
@@ -342,8 +345,8 @@ footer {
   .pageBanner {
     -ms-grid-columns: auto 1fr;
         grid-template-columns: auto 1fr;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url(/Assets/banner.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/Assets/banner.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url("../Assets/banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../Assets/banner.jpg");
   }
   .pageBanner .bannerInformation {
     width: 80%;
