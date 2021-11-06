@@ -48,7 +48,7 @@ header{
 
 .pageBanner{
     height: 82vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.3)), url('/Assets/banner.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.3)), url('../Assets/banner.jpg');
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
@@ -179,13 +179,12 @@ header{
 .aboutUsIcons{
     display: grid;
     place-items: center;
-    grid-template-rows: 30% 1fr;
 
     min-height: 50vh;
-    height: min-content;
     background: $primary;
     color: #ffffff;
     
+
     h5{
         
         font-size: 2.5rem;
@@ -349,7 +348,8 @@ footer{
 @media only screen and (max-width: 500px){
     .pageBanner{
         background-position: center;
-        
+        min-height: 600px;
+
         .bannerInformation{
             height: 80%;
             width: 90%;
@@ -387,6 +387,10 @@ footer{
                 font-size: 1rem;
             }
         }
+
+        .contactUsText{
+            min-height: 500px;
+        }
     }
 
     .aboutUsIcons{
@@ -394,10 +398,8 @@ footer{
 
         .icons{
             grid-template-columns: repeat(2, 1fr);
-            
-            .individualIcons{
-                height: max-content;
-            }
+            padding: revert;
+            gap: 1rem;
         }
     }
 }
@@ -424,7 +426,7 @@ footer{
     }
 
     .aboutUsIcons{
-        min-height: 600px;
+        min-height: 500px;
     }
 
     footer{

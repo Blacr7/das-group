@@ -35,8 +35,8 @@ header img {
 
 .pageBanner {
   height: 82vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.3))), url("/Assets/banner.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("/Assets/banner.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.3))), url("../Assets/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../Assets/banner.jpg");
   background-position: right center;
   background-size: cover;
   background-attachment: fixed;
@@ -248,12 +248,7 @@ header img {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  -ms-grid-rows: 30% 1fr;
-      grid-template-rows: 30% 1fr;
   min-height: 50vh;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
   background: #A7172C;
   color: #ffffff;
 }
@@ -416,6 +411,7 @@ footer {
 @media only screen and (max-width: 500px) {
   .pageBanner {
     background-position: center;
+    min-height: 600px;
   }
   .pageBanner .bannerInformation {
     height: 80%;
@@ -450,17 +446,17 @@ footer {
   .mainContent .aboutUsText p {
     font-size: 1rem;
   }
+  .mainContent .contactUsText {
+    min-height: 500px;
+  }
   .aboutUsIcons {
     height: 800px;
   }
   .aboutUsIcons .icons {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-  }
-  .aboutUsIcons .icons .individualIcons {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    padding: revert;
+    gap: 1rem;
   }
 }
 
@@ -481,7 +477,7 @@ footer {
     min-height: 500px;
   }
   .aboutUsIcons {
-    min-height: 600px;
+    min-height: 500px;
   }
   footer {
     min-height: 40px;
