@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  background-repeat: no-repeat;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+}
+
+header img {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+.pageBanner {
+  height: 82vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.3))), url("/Assets/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("/Assets/banner.jpg");
+  background-position: right center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: minmax(50%, 60%) 1fr;
+      grid-template-columns: minmax(50%, 60%) 1fr;
+}
+
+.pageBanner .bannerInformation {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  justify-items: start;
+  color: #ffffff;
+  width: 60%;
+  height: 50%;
+}
+
+.pageBanner .bannerInformation h2 {
+  font-size: 3rem;
+}
+
+.pageBanner .bannerInformation p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pageBanner .bannerInformation button {
+  background: #A7172C;
+  color: #ffffff;
+  padding: .7rem;
+  border: none;
+  border-radius: 100vw;
+  font-weight: 100;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 13rem;
+  min-width: 15%;
+}
+
+.pageBanner .bannerInformation button:hover {
+  cursor: pointer;
+}
+
+.callToAction {
+  height: 8vh;
+  width: 100%;
+  background: #A7172C;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.callToAction p {
+  font-size: 1.3rem;
+}
+
+.callToAction p span {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.callToAction button {
+  background: black;
+  color: #ffffff;
+  padding: .7rem;
+  border: none;
+  border-radius: 100vw;
+  font-weight: 100;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 12rem;
+}
+
+.callToAction button:hover {
+  cursor: pointer;
+}
+
+.mainContent {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: end;
+  -ms-grid-columns: minmax(50%, 60%) 1fr;
+      grid-template-columns: minmax(50%, 60%) 1fr;
+  height: 80vh;
+  font-size: 1rem;
+}
+
+.mainContent .aboutUsText {
+  width: 80%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5rem;
+}
+
+.mainContent .aboutUsText h4 {
+  font-size: 2.2rem;
+  color: #A7172C;
+}
+
+.mainContent .aboutUsText p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.mainContent .contactUsText {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+  -ms-grid-columns: 1fr 15%;
+      grid-template: auto 1fr auto / 1fr 15%;
+  height: 100%;
+  width: 100%;
+  padding: 15% 10%;
+  background: #EFEFEF;
+}
+
+.mainContent .contactUsText h5 {
+  font-size: 1.8rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.mainContent .contactUsText ul {
+  -webkit-margin-before: unset;
+          margin-block-start: unset;
+  -webkit-padding-start: unset;
+          padding-inline-start: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.2rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.mainContent .contactUsText ul i {
+  color: #A7172C;
+}
+
+.mainContent .contactUsText button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  background: #A7172C;
+  color: #ffffff;
+  padding: .7rem;
+  border: none;
+  border-radius: 100vw;
+  font-weight: 100;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 13rem;
+}
+
+.mainContent .contactUsText button:hover {
+  cursor: pointer;
+}
+
+.aboutUsIcons {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-rows: 30% 1fr;
+      grid-template-rows: 30% 1fr;
+  min-height: 50vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background: #A7172C;
+  color: #ffffff;
+}
+
+.aboutUsIcons h5 {
+  font-size: 2.5rem;
+}
+
+.aboutUsIcons .icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  gap: 2rem;
+  height: 80%;
+  width: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.aboutUsIcons .icons .individualIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.aboutUsIcons .icons .individualIcons i {
+  font-size: 4rem;
+}
+
+.aboutUsIcons .icons .individualIcons span {
+  width: 80%;
+}
+
+footer {
+  height: 10vh;
+  background: grey;
+  color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .pageBanner {
+    -ms-grid-columns: minmax(60%, 70%) 1fr;
+        grid-template-columns: minmax(60%, 70%) 1fr;
+  }
+  .pageBanner .bannerInformation {
+    width: 70%;
+  }
+  .mainContent {
+    height: 100vh;
+  }
+  .mainContent .aboutUsText h4 {
+    font-size: 2rem;
+  }
+  .mainContent .aboutUsText p {
+    font-size: 1.1rem;
+  }
+  .aboutUsIcons {
+    font-size: 14px;
+  }
+  .aboutUsIcons h5 {
+    font-size: 2.2rem;
+  }
+  .aboutUsIcons .icons {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    padding: 0 0 2rem;
+  }
+  .aboutUsIcons .icons .individualIcons i {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .pageBanner {
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url(/Assets/banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/Assets/banner.jpg);
+  }
+  .pageBanner .bannerInformation {
+    width: 80%;
+    height: 60%;
+  }
+  .mainContent {
+    justify-items: center;
+    height: 900px;
+  }
+  .mainContent .aboutUsText {
+    margin-right: revert;
+  }
+  .mainContent .contactUsText {
+    -ms-grid-rows: auto 1fr auto;
+    -ms-grid-columns: 1fr;
+        grid-template: auto 1fr auto / 1fr;
+  }
+  .aboutUsIcons {
+    height: 70vh;
+  }
+  .aboutUsIcons .icons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .aboutUsIcons .icons .individualIcons {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+  }
+  .aboutUsIcons .icons .individualIcons i {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .callToAction p {
+    font-size: 1rem;
+  }
+  .callToAction button {
+    padding: .3rem;
+  }
+  .mainContent {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .mainContent .aboutUsText {
+    height: 100vh;
+  }
+  .mainContent .contactUsText {
+    height: 80vh;
+    padding: 5%;
+  }
+  .mainContent .contactUsText h5 {
+    text-align: center;
+  }
+  .mainContent .contactUsText button {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .pageBanner {
+    background-position: center;
+  }
+  .pageBanner .bannerInformation {
+    height: 80%;
+    width: 90%;
+  }
+  .pageBanner .bannerInformation h2 {
+    font-size: 2.5rem;
+  }
+  .pageBanner .bannerInformation p {
+    font-size: 1.2rem;
+  }
+  .callToAction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 20vh;
+  }
+  .callToAction p {
+    width: 100%;
+    text-align: center;
+  }
+  .mainContent .aboutUsText {
+    height: 1200px;
+  }
+  .mainContent .aboutUsText h4 {
+    font-size: 1.8rem;
+  }
+  .mainContent .aboutUsText p {
+    font-size: 1rem;
+  }
+  .aboutUsIcons {
+    height: 800px;
+  }
+  .aboutUsIcons .icons {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutUsIcons .icons .individualIcons {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+@media (orientation: landscape) {
+  header {
+    min-height: 80px;
+  }
+  .pageBanner {
+    min-height: 600px;
+  }
+  .callToAction {
+    min-height: 40px;
+  }
+  .aboutUsText {
+    min-height: 800px;
+  }
+  .contactUsText {
+    min-height: 500px;
+  }
+  .aboutUsIcons {
+    min-height: 600px;
+  }
+  footer {
+    min-height: 40px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
